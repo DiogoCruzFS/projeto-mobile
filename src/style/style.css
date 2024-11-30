@@ -45,8 +45,6 @@ body {
     font-size: 0.875rem;
 }
 
-.consulta__marcada
-
 .conteudo-dia {
     margin: 0 1em;
 }
@@ -54,13 +52,13 @@ body {
 .consulta__dia {
     font-weight: 700;
     font-size: 1rem;
-    margin: 1.5em 0 0.6em 0;
+    margin: 1.5em 0 0.6em 1em;
 }
 
 .imagem-perfil {
     height: 32px;
     width: 32px;
-    border-radius: 26px;
+    border-radius: 50%;
 }
 
 .consulta__cliente {
@@ -160,6 +158,7 @@ body {
 .rodape-footer {
     display: flex;
     justify-content: center;
+    margin-top: 5em;
 }
 .rodape {
     display: flex;
@@ -203,5 +202,122 @@ body {
     margin-top: 0.5em;
 }
 
+.cabecalho__menu-lateral {
+    display: none;
+}
+
 @media screen and (min-width: 1195px) {
+    .consulta__marcando {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 6em;
+    }
+
+    .consulta__horas, .consulta__cliente {
+        width:400px;
+    }
+
+    .imagem-perfil {
+        height: 50px;
+        width: 50px;
+    }
+
+    .botao-endereco {
+        width: 300px;
+    }
+
+    .botao-audio, .botao-video {
+        width: 150px;
+    }
+
+    .cabecalho__menu-lateral {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 240px;
+        height: 100%;
+        padding: 40px 10px 30px 10px;
+        border-right: 1px solid var(--cor-texto);
+        background-color: var(--cor-texto-botao);
+    }
+    
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho__menu-lateral {
+        margin-top: 2em;
+        display: block;
+    }
+
+    .menu-lateral-lista__item {
+        display: flex;
+        align-items: center;
+        margin: 5em 0 5em 0;
+        transition: transform 0.4s;
+        padding: 10px 0;
+    }
+
+    .menu-lateral-lista__item:hover {
+        background-color: #000;
+        border-radius: 8px;
+        transition: scale (1.8);
+        padding: 10px 0;
+    }
+
+    .menu-lateral-lista__link , .menu-lateral-lista__link-azul {
+        margin-left: 2em;
+        text-decoration: none;
+        color: var(--cor-texto);
+    }
+
+    .menu-lateral-lista__link-azul {
+        color: var(--cor-botao-segudaria);
+    }
+
+    .consulta__marcando {
+        grid-template-columns: 35% 35% 35%;
+    }
+
+    .conteudo-dia {
+        margin-left: 17em;
+    }
+
+    .cabecalho__medica {
+        height: 80px;
+        width: 80px;
+        border-radius: 40px;
+    }
+
+    .informacao-medica__nome {
+        font-size: 2rem;
+    }
+
+    .informacao-medica__consultas {
+        font-size: 1.125rem;
+    }
+
+    .consulta__horas, .consulta__cliente {
+        width:90%;
+    }
+
+    .botao-endereco {
+        width:80%;
+    }
+
+    .botao-audio, .botao-video {
+        width:39.9%;
+    }
+
+    .rodape {
+        display: none;
+    }
 }

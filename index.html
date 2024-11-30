@@ -11,13 +11,39 @@
     <title>Projeto Mobile</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho__medica" src="src/image/perfil.svg" alt="Foto do perfil">
-        <div class="cabecalho__informacao-medica">
-            <h1 class="informacao-medica__nome">Olá, Sônia</h1>
-            <p class="informacao-medica__consultas">Mais 4 consultas hoje</p>
-        </div>
-    </header>
+    <aside class="sidebar">
+        <header class="cabecalho">
+            <div>
+                <img class="cabecalho__medica" src="src/image/perfil.svg" alt="Foto do perfil">
+            </div>
+            <div class="cabecalho__informacao-medica">
+                <h1 class="informacao-medica__nome">Olá, Sônia</h1>
+                <p class="informacao-medica__consultas">Mais 3 consultas hoje</p>
+            </div>
+            <nav class="cabecalho__menu-lateral">
+                <ul class="menu-lateral-lista">
+                    <li class="menu-lateral-lista__item">
+                        <img src="src/image/Calendarioicone.svg" alt="Icone do Calendario">
+                        <a class="menu-lateral-lista__link-azul" href="#">Consultas</a>
+                    </li>
+                    <li class="menu-lateral-lista__item">
+                        <img src="src/image/clientes icone.svg" alt="Icone do perfil">
+                        <a class="menu-lateral-lista__link" href="#">Clientes</a>
+                    </li>
+                    <li class="menu-lateral-lista__item">
+                        <img src="src/image/relatorios icone.svg" alt="Icone do relatorios">
+                        <a class="menu-lateral-lista__link" href="#">Relatórios</a>
+                    </li>
+                    <li class="menu-lateral-lista__item">
+                        <img src="src/image/menu icone.svg" alt="Icone do menu">
+                        <a class="menu-lateral-lista__link" href="#">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+    </aside>
+    
     <main class="conteudo-dia">
         <h2 class="consulta__dia">Hoje</h2>
         <section class="consulta__marcando">
@@ -60,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="consulta">
+            <div class="consulta tablet">
                 <div class="consulta__cliente">
                     <img class="imagem-perfil" src="src/image/perfil-cliente-terca.svg" alt="Foto do perfil">
                     <div>
@@ -246,7 +272,7 @@
     </main>
     <footer class="rodape-footer">
         <section class="rodape">
-            <img src="src/image/mais.svg" alt="Icone de mais">
+            <img class="rodape__iconemais" src="src/image/mais.svg" alt="Icone de mais">
             <ul class="rodape-lista">
                 <li class="rodape-lista__item">
                     <img src="src/image/Calendarioicone.svg" alt="Icone do Calendario">
